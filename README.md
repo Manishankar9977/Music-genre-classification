@@ -1,1 +1,1 @@
-# Music-gerne-classification
+# Music-genre-classification
