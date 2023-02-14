@@ -1,9 +1,8 @@
-streamlit
-numpy 
-time 
-matplotlib
-librosa
-requests
-streamlit_lottie
+numpy==1.21.4
+streamlit==1.2.0
+librosa==0.9.2
+requests==2.28.2
+streamlit_lottie==0.0.3
 Image
-tensorflow 
+tensorflow==2.11.0
+
