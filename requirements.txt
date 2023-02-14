@@ -1,0 +1,10 @@
+streamlit
+numpy 
+tensorflow 
+time 
+matplotlib
+
+librosa
+requests
+streamlit_lottie
+Image
