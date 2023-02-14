@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import tensorflow as tf
 from time import time
-from matplotlib import pyplot as plt
 import os
 import librosa
 import requests
