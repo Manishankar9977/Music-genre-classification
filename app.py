@@ -13,9 +13,9 @@ try:
 except ImportError:
  import Image
 
-st.title("------ :blue[Music] Gerne Classification 🎸")
+st.title("------ Music Gerne Classification 🎸")
 
-st.write("The :green[GTZAN] genre collection dataset which is a very popular audio collection dataset. It contains approximately 1000 audio files that belong to 10 different classes. Each audio file is in .wav format (extension). The classes to which audio files belong are :red[Blues],:green[Hip-hop], :blue[classical],:orange[pop], :violet[Disco],:orange[Country], :blue[Metal], :green[Jazz], :red[Reggae], and :violet[Rock]. ")
+st.write("The GTZAN genre collection dataset which is a very popular audio collection dataset. It contains approximately 1000 audio files that belong to 10 different classes. Each audio file is in .wav format (extension). The classes to which audio files belong are Blues, Hip-hop, classical, pop, Disco, Country, Metal, Jazz, Reggae, and Rock. ")
 
 image = Image.open('rock.jpg')
 def load_lottieurl(url: str):
@@ -42,11 +42,11 @@ for genre, genre_number in genres.items():
             dataset.append(mfcc_fea)
             cla.append(fea_class) '''
 st.code(code, language='python')
-st.subheader('                   Upload your :red[.wav] file                 ')
+st.subheader('                   Upload your .wav file                 ')
 
-audio_file_path = st.file_uploader("Choose a :red[.wav] file",type=['wav'])
+audio_file_path = st.file_uploader("Choose a .wav file",type=['wav'])
 
-if audio_file_path:
+if st.button('Predict'):
     mydict = {'blues': 0, 'classical': 1, 'country': 2, 'disco': 3, 'hiphop': 4, 
             'jazz': 5, 'metal': 6, 'pop': 7, 'reggae': 8, 'rock': 9}
     librosa_audio_data,librosa_sample_rate=librosa.load(audio_file_path)
@@ -63,9 +63,9 @@ if audio_file_path:
         if classs == b[0]:
             co1,co2=st.columns(2)
             with co1:
-               st.subheader('The :red[audio] file belongs to genre')
+               st.subheader('The audio file belongs to genre')
   
             with co2:
-               st.subheader(gerne)
+               st.subheader(**gerne**)
 else:
    pass
