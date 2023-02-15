@@ -50,4 +50,9 @@ In contrast to the CNN model's results we decide to use a stateful LSTM thats al
 </p>
 <a> <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/LSTM.png" height=200></a>
 
+## App Link:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://manishankar9977-music-genre-classification-app-p5in0m.streamlit.app/
+)
+
 
