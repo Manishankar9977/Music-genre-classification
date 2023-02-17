@@ -64,7 +64,7 @@ if st.button('Predict'):
         if classs == b[0]:
             co1,co2=st.columns(2)
             with co1:
-               st.info('The audio file belongs to genre', icon="🎸")
+               st.info('The audio file belongs to' genre 'genre.')
                st.subheader('The audio file belongs to genre')
   
             with co2:
