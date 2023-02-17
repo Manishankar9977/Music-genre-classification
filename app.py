@@ -43,7 +43,9 @@ for genre, genre_number in genres.items():
             cla.append(fea_class) '''
 st.code(code, language='python')
 st.subheader('                   Upload your .wav file                 ')
-
+st.markdown('Streamlit is **_really_ cool**.')
+st.markdown(”This text is :red[colored red], and this is **:blue[colored]** and bold.”)
+st.markdown(":green[$\sqrt{x^2+y^2}=1$] is a Pythagorean identity. :pencil:")
 audio_file_path = st.file_uploader("Choose a .wav file",type=['wav'])
 
 if st.button('Predict'):
