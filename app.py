@@ -67,6 +67,6 @@ if st.button('Predict'):
                st.subheader('The audio file belongs to genre')
   
             with co2:
-               st.subheader(**gerne** :music:)
+               st.subheader(**gerne** " :music:")
 else:
    pass
